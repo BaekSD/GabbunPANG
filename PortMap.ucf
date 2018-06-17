@@ -1,0 +1,49 @@
+NET clk	LOC = AB12;
+NET rstb	LOC = U14;
+NET "rstb" CLOCK_DEDICATED_ROUTE = FALSE;
+
+NET lcd_clk	LOC = V16;
+NET de	LOC = U16;
+
+NET lcd<15>	LOC = AA17;
+NET lcd<14>	LOC = Y17;
+NET lcd<13>	LOC = W17;
+NET lcd<12>	LOC = V17;
+NET lcd<11>	LOC = AB18;
+NET lcd<10>	LOC = AA18;
+NET lcd<9>	LOC = Y18;
+NET lcd<8>	LOC = W18;
+NET lcd<7>	LOC = AB19;
+NET lcd<6>	LOC = AA19;
+NET lcd<5>	LOC = AB20;
+NET lcd<4>	LOC = AA20;
+NET lcd<3>	LOC = Y16;
+NET lcd<2>	LOC = V18;
+NET lcd<1>	LOC = AB13;
+NET lcd<0>	LOC = W14;
+
+NET segment<7>	LOC = A7;
+NET segment<6>	LOC = E8;
+NET segment<5>	LOC = D8;
+NET segment<4>	LOC = B8;
+NET segment<3>	LOC = A8;
+NET segment<2>	LOC = F9;
+NET segment<1>	LOC = E9;
+NET segment<0>	LOC = B9;
+
+NET dig<5>	LOC = D6;
+NET dig<4>	LOC = C6;
+NET dig<3>	LOC = B6;
+NET dig<2>	LOC = E7;
+NET dig<1>	LOC = D7;
+NET dig<0>	LOC = B7;
+
+NET key_in<0>	LOC = V19;
+NET key_in<1>	LOC = W21;
+NET key_in<2>	LOC = U19;
+NET key_in<3>	LOC = V22;
+
+NET key_scan<0>	LOC = Y22;
+NET key_scan<1>	LOC = W19;
+NET key_scan<2>	LOC = W20;
+NET key_scan<3>	LOC = V20;

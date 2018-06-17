@@ -1,0 +1,1197 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: GabbunPANG.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "GabbunPANG.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "GabbunPANG"
+Output Format                      : NGC
+Target Device                      : xc3s2000-4-fg456
+
+---- Source Options
+Top Module Name                    : GabbunPANG
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/project/GabbunPANG/countoto5.vhd" in Library work.
+Entity <countoto5> compiled.
+Entity <countoto5> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/project/GabbunPANG/dff.vhd" in Library work.
+Entity <dff> compiled.
+Entity <dff> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/project/GabbunPANG/clockDividerx4.vhd" in Library work.
+Entity <clockDividerx4> compiled.
+Entity <clockDividerx4> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/project/GabbunPANG/clk_25m.vhd" in Library work.
+Entity <clk_25m> compiled.
+Entity <clk_25m> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "D:/project/GabbunPANG/clkdivider.vhd" in Library work.
+Entity <clkdivider> compiled.
+Entity <clkdivider> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/project/GabbunPANG/key_matrix.vhd" in Library work.
+Entity <Key_Matrix> compiled.
+Entity <Key_Matrix> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/project/GabbunPANG/TFT_LCD.vhd" in Library work.
+Entity <TFT_LCD> compiled.
+Entity <TFT_LCD> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/project/GabbunPANG/reg.vhd" in Library work.
+Entity <reg> compiled.
+Entity <reg> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/project/GabbunPANG/random.vhd" in Library work.
+Entity <random> compiled.
+Entity <random> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/project/GabbunPANG/segment7.vhd" in Library work.
+Entity <segment7> compiled.
+Entity <segment7> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/project/GabbunPANG/GabbunPANG.vhd" in Library work.
+Entity <GabbunPANG> compiled.
+Entity <GabbunPANG> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <GabbunPANG> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <clk_25m> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <clkdivider> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <key_matrix> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <TFT_LCD> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <reg> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <random> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <segment7> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <clockDividerx4> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <dff> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <countoto5> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <GabbunPANG> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:753 - "D:/project/GabbunPANG/GabbunPANG.vhd" line 122: Unconnected output port 'CLKIN_IBUFG_OUT' of component 'clk_25m'.
+WARNING:Xst:753 - "D:/project/GabbunPANG/GabbunPANG.vhd" line 122: Unconnected output port 'CLK0_OUT' of component 'clk_25m'.
+WARNING:Xst:753 - "D:/project/GabbunPANG/GabbunPANG.vhd" line 122: Unconnected output port 'LOCKED_OUT' of component 'clk_25m'.
+Entity <GabbunPANG> analyzed. Unit <GabbunPANG> generated.
+
+Analyzing Entity <clk_25m> in library <work> (Architecture <BEHAVIORAL>).
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <CLKIN_IBUFG_INST> in unit <clk_25m>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <CLKIN_IBUFG_INST> in unit <clk_25m>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <CLKIN_IBUFG_INST> in unit <clk_25m>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CLKIN_IBUFG_INST> in unit <clk_25m>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_INST> in unit <clk_25m>.
+    Set user-defined property "CLKFX_DIVIDE =  8" for instance <DCM_INST> in unit <clk_25m>.
+    Set user-defined property "CLKFX_MULTIPLY =  2" for instance <DCM_INST> in unit <clk_25m>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_INST> in unit <clk_25m>.
+    Set user-defined property "CLKIN_PERIOD =  10.0000000000000000" for instance <DCM_INST> in unit <clk_25m>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_INST> in unit <clk_25m>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_INST> in unit <clk_25m>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_INST> in unit <clk_25m>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_INST> in unit <clk_25m>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_INST> in unit <clk_25m>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_INST> in unit <clk_25m>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_INST> in unit <clk_25m>.
+    Set user-defined property "FACTORY_JF =  8080" for instance <DCM_INST> in unit <clk_25m>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_INST> in unit <clk_25m>.
+    Set user-defined property "SIM_MODE =  SAFE" for instance <DCM_INST> in unit <clk_25m>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_INST> in unit <clk_25m>.
+Entity <clk_25m> analyzed. Unit <clk_25m> generated.
+
+Analyzing Entity <clkdivider> in library <work> (Architecture <Behavioral>).
+Entity <clkdivider> analyzed. Unit <clkdivider> generated.
+
+Analyzing Entity <key_matrix> in library <work> (Architecture <Behavioral>).
+INFO:Xst:2679 - Register <key_temp<15>> in unit <key_matrix> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <key_temp<14>> in unit <key_matrix> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <key_temp<12>> in unit <key_matrix> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <key_temp<11>> in unit <key_matrix> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <key_temp<7>> in unit <key_matrix> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <key_temp<6>> in unit <key_matrix> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <key_temp<4>> in unit <key_matrix> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <key_temp<3>> in unit <key_matrix> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <key_temp<2>> in unit <key_matrix> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <key_temp<1>> in unit <key_matrix> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <key_temp<0>> in unit <key_matrix> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <key_matrix> analyzed. Unit <key_matrix> generated.
+
+Analyzing Entity <clockDividerx4> in library <work> (Architecture <Behavioral>).
+Entity <clockDividerx4> analyzed. Unit <clockDividerx4> generated.
+
+Analyzing Entity <TFT_LCD> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:790 - "D:/project/GabbunPANG/TFT_LCD.vhd" line 174: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "D:/project/GabbunPANG/TFT_LCD.vhd" line 174: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1561 - "D:/project/GabbunPANG/TFT_LCD.vhd" line 178: Mux is complete : default of case is discarded
+Entity <TFT_LCD> analyzed. Unit <TFT_LCD> generated.
+
+Analyzing Entity <reg> in library <work> (Architecture <Behavioral>).
+Entity <reg> analyzed. Unit <reg> generated.
+
+Analyzing Entity <dff> in library <work> (Architecture <Behavioral>).
+Entity <dff> analyzed. Unit <dff> generated.
+
+Analyzing Entity <random> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "D:/project/GabbunPANG/random.vhd" line 46: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <count>
+Entity <random> analyzed. Unit <random> generated.
+
+Analyzing Entity <segment7> in library <work> (Architecture <Behavioral>).
+Entity <segment7> analyzed. Unit <segment7> generated.
+
+Analyzing Entity <countoto5> in library <work> (Architecture <Behavioral>).
+Entity <countoto5> analyzed. Unit <countoto5> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clkdivider>.
+    Related source file is "D:/project/GabbunPANG/clkdivider.vhd".
+    Found 24-bit up counter for signal <cnt_data>.
+    Found 1-bit register for signal <d_clk>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <clkdivider> synthesized.
+
+
+Synthesizing Unit <TFT_LCD>.
+    Related source file is "D:/project/GabbunPANG/TFT_LCD.vhd".
+WARNING:Xst:1780 - Signal <lcd_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <y$mux0004>.
+    Using one-hot encoding for signal <x$mux0004>.
+    Found 10-bit adder for signal <$add0000> created at line 167.
+    Found 10-bit adder for signal <$add0001> created at line 167.
+    Found 10-bit adder for signal <$add0002> created at line 169.
+    Found 10-bit adder for signal <$add0003> created at line 169.
+    Found 3x7-bit multiplier for signal <add0000$mult0000> created at line 167.
+    Found 3x7-bit multiplier for signal <add0002$mult0000> created at line 169.
+    Found 5-bit register for signal <b_data>.
+    Found 1-bit register for signal <de_i>.
+    Found 10-bit comparator greatequal for signal <de_i$cmp_ge0000> created at line 115.
+    Found 10-bit comparator lessequal for signal <de_i$cmp_le0000> created at line 115.
+    Found 6-bit register for signal <g_data>.
+    Found 10-bit adder for signal <g_data$add0000> created at line 167.
+    Found 10-bit adder for signal <g_data$add0001> created at line 167.
+    Found 10-bit adder for signal <g_data$add0002> created at line 169.
+    Found 10-bit adder for signal <g_data$add0003> created at line 169.
+    Found 10-bit comparator greatequal for signal <g_data$cmp_ge0000> created at line 167.
+    Found 11-bit comparator greatequal for signal <g_data$cmp_ge0001> created at line 167.
+    Found 10-bit comparator greatequal for signal <g_data$cmp_ge0002> created at line 169.
+    Found 11-bit comparator greatequal for signal <g_data$cmp_ge0003> created at line 169.
+    Found 10-bit comparator lessequal for signal <g_data$cmp_le0000> created at line 167.
+    Found 11-bit comparator lessequal for signal <g_data$cmp_le0001> created at line 167.
+    Found 10-bit comparator lessequal for signal <g_data$cmp_le0002> created at line 169.
+    Found 11-bit comparator lessequal for signal <g_data$cmp_le0003> created at line 169.
+    Found 11-bit up counter for signal <hsync_cnt>.
+    Found 5-bit register for signal <r_data>.
+    Found 3x7-bit multiplier for signal <r_data$mult0000> created at line 167.
+    Found 3x7-bit multiplier for signal <r_data$mult0001> created at line 169.
+    Found 10-bit up counter for signal <vsync_cnt>.
+    Found 11-bit comparator greatequal for signal <x$cmp_ge0000> created at line 137.
+    Found 11-bit comparator greatequal for signal <x$cmp_ge0001> created at line 138.
+    Found 11-bit comparator greatequal for signal <x$cmp_ge0002> created at line 140.
+    Found 11-bit comparator greatequal for signal <x$cmp_ge0003> created at line 142.
+    Found 11-bit comparator greatequal for signal <x$cmp_ge0004> created at line 144.
+    Found 11-bit comparator lessequal for signal <x$cmp_le0000> created at line 137.
+    Found 11-bit comparator lessequal for signal <x$cmp_le0001> created at line 138.
+    Found 11-bit comparator lessequal for signal <x$cmp_le0002> created at line 140.
+    Found 11-bit comparator lessequal for signal <x$cmp_le0003> created at line 142.
+    Found 11-bit comparator lessequal for signal <x$cmp_le0004> created at line 144.
+    Found 10-bit comparator greatequal for signal <y$cmp_ge0000> created at line 150.
+    Found 10-bit comparator greatequal for signal <y$cmp_ge0001> created at line 151.
+    Found 10-bit comparator greatequal for signal <y$cmp_ge0002> created at line 153.
+    Found 10-bit comparator greatequal for signal <y$cmp_ge0003> created at line 155.
+    Found 10-bit comparator greatequal for signal <y$cmp_ge0004> created at line 157.
+    Found 10-bit comparator lessequal for signal <y$cmp_le0000> created at line 150.
+    Found 10-bit comparator lessequal for signal <y$cmp_le0001> created at line 151.
+    Found 10-bit comparator lessequal for signal <y$cmp_le0002> created at line 153.
+    Found 10-bit comparator lessequal for signal <y$cmp_le0003> created at line 155.
+    Found 10-bit comparator lessequal for signal <y$cmp_le0004> created at line 157.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   8 Adder/Subtractor(s).
+	inferred   4 Multiplier(s).
+	inferred  30 Comparator(s).
+Unit <TFT_LCD> synthesized.
+
+
+Synthesizing Unit <random>.
+    Related source file is "D:/project/GabbunPANG/random.vhd".
+    Found 51-bit up counter for signal <count>.
+    Found 51-bit register for signal <rand_sig>.
+    Found 1-bit xor2 for signal <rand_sig$xor0000> created at line 52.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  51 D-type flip-flop(s).
+Unit <random> synthesized.
+
+
+Synthesizing Unit <clockDividerx4>.
+    Related source file is "D:/project/GabbunPANG/clockDividerx4.vhd".
+    Found 4-bit up counter for signal <cnt_data>.
+    Found 1-bit register for signal <d_clk>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <clockDividerx4> synthesized.
+
+
+Synthesizing Unit <dff>.
+    Related source file is "D:/project/GabbunPANG/dff.vhd".
+    Found 1-bit register for signal <data>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <dff> synthesized.
+
+
+Synthesizing Unit <countoto5>.
+    Related source file is "D:/project/GabbunPANG/countoto5.vhd".
+    Found 3-bit up counter for signal <cnt_data>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <countoto5> synthesized.
+
+
+Synthesizing Unit <clk_25m>.
+    Related source file is "D:/project/GabbunPANG/clk_25m.vhd".
+Unit <clk_25m> synthesized.
+
+
+Synthesizing Unit <key_matrix>.
+    Related source file is "D:/project/GabbunPANG/key_matrix.vhd".
+    Found 4-bit register for signal <key_data_int>.
+    Found 4-bit register for signal <key_in_int>.
+    Found 1-bit register for signal <key_temp<13>>.
+    Found 3-bit register for signal <key_temp<10:8>>.
+    Found 1-bit register for signal <key_temp<5>>.
+    Found 4-bit register for signal <scan_cnt>.
+    Summary:
+	inferred  13 D-type flip-flop(s).
+Unit <key_matrix> synthesized.
+
+
+Synthesizing Unit <reg>.
+    Related source file is "D:/project/GabbunPANG/reg.vhd".
+Unit <reg> synthesized.
+
+
+Synthesizing Unit <segment7>.
+    Related source file is "D:/project/GabbunPANG/segment7.vhd".
+    Found 16x8-bit ROM for signal <seg_int>.
+    Found 6-bit register for signal <digit>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <segment7> synthesized.
+
+
+Synthesizing Unit <GabbunPANG>.
+    Related source file is "D:/project/GabbunPANG/GabbunPANG.vhd".
+WARNING:Xst:646 - Signal <rand<50>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <check_flag> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <cur_state>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <cur_state> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <cur_state> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 2-bit 5-to-1 multiplexer for signal <$mux0000> created at line 309.
+    Found 2-bit 5-to-1 multiplexer for signal <$mux0001> created at line 309.
+    Found 2-bit 5-to-1 multiplexer for signal <$mux0002> created at line 317.
+    Found 2-bit 5-to-1 multiplexer for signal <$mux0003> created at line 317.
+    Found 2-bit 4-to-1 multiplexer for signal <$mux0006> created at line 320.
+    Found 2-bit 3-to-1 multiplexer for signal <$mux0007> created at line 320.
+    Found 2-bit 5-to-1 multiplexer for signal <$mux0008> created at line 324.
+    Found 2-bit 5-to-1 multiplexer for signal <$mux0009> created at line 324.
+    Found 2-bit 4-to-1 multiplexer for signal <$mux0012> created at line 328.
+    Found 2-bit 3-to-1 multiplexer for signal <$mux0013> created at line 328.
+    Found 2-bit 5-to-1 multiplexer for signal <$mux0014> created at line 338.
+    Found 2-bit 5-to-1 multiplexer for signal <$mux0015> created at line 338.
+    Found 2-bit 5-to-1 multiplexer for signal <$mux0016> created at line 345.
+    Found 2-bit 5-to-1 multiplexer for signal <$mux0017> created at line 345.
+    Found 5-bit 5-to-1 multiplexer for signal <$varindex0000> created at line 453.
+    Found 5-bit 5-to-1 multiplexer for signal <$varindex0001> created at line 591.
+    Found 1-bit register for signal <check_result<0>>.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0000> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0001> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0002> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0003> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0004> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0005> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0006> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0007> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0008> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0009> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0010> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0011> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0012> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0013> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0014> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0015> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0016> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0017> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0018> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0019> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0020> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0021> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0022> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0023> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0024> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0025> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0026> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0027> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0028> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0029> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0030> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0031> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0032> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0033> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0034> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0035> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0036> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0037> created at line 218.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0038> created at line 217.
+    Found 2-bit comparator equal for signal <check_result$cmp_eq0039> created at line 218.
+    Found 3-bit register for signal <cnt_var>.
+    Found 3-bit adder for signal <cnt_var$addsub0000> created at line 587.
+    Found 11-bit register for signal <cur_state>.
+    Found 12-bit register for signal <loc_reg_in>.
+    Found 3-bit adder for signal <loc_reg_in$add0002> created at line 295.
+    Found 3-bit adder for signal <loc_reg_in$add0003> created at line 302.
+    Found 6-bit comparator equal for signal <loc_reg_in$cmp_eq0005> created at line 250.
+    Found 3-bit comparator equal for signal <loc_reg_in$cmp_eq0006> created at line 252.
+    Found 3-bit comparator equal for signal <loc_reg_in$cmp_eq0007> created at line 254.
+    Found 3-bit comparator equal for signal <loc_reg_in$cmp_eq0008> created at line 259.
+    Found 3-bit comparator equal for signal <loc_reg_in$cmp_eq0009> created at line 268.
+    Found 3-bit comparator equal for signal <loc_reg_in$cmp_eq0010> created at line 271.
+    Found 3-bit comparator equal for signal <loc_reg_in$cmp_eq0011> created at line 276.
+    Found 2-bit comparator equal for signal <loc_reg_in$cmp_eq0016> created at line 309.
+    Found 3-bit comparator equal for signal <loc_reg_in$cmp_eq0017> created at line 315.
+    Found 2-bit comparator equal for signal <loc_reg_in$cmp_eq0018> created at line 317.
+    Found 2-bit comparator equal for signal <loc_reg_in$cmp_eq0019> created at line 317.
+    Found 2-bit comparator equal for signal <loc_reg_in$cmp_eq0020> created at line 318.
+    Found 2-bit comparator equal for signal <loc_reg_in$cmp_eq0021> created at line 318.
+    Found 2-bit comparator equal for signal <loc_reg_in$cmp_eq0022> created at line 320.
+    Found 2-bit comparator equal for signal <loc_reg_in$cmp_eq0023> created at line 320.
+    Found 2-bit comparator equal for signal <loc_reg_in$cmp_eq0024> created at line 324.
+    Found 2-bit comparator equal for signal <loc_reg_in$cmp_eq0025> created at line 324.
+    Found 2-bit comparator equal for signal <loc_reg_in$cmp_eq0026> created at line 326.
+    Found 2-bit comparator equal for signal <loc_reg_in$cmp_eq0027> created at line 326.
+    Found 2-bit comparator equal for signal <loc_reg_in$cmp_eq0028> created at line 328.
+    Found 2-bit comparator equal for signal <loc_reg_in$cmp_eq0029> created at line 328.
+    Found 2-bit comparator equal for signal <loc_reg_in$cmp_eq0030> created at line 338.
+    Found 2-bit comparator equal for signal <loc_reg_in$cmp_eq0031> created at line 338.
+    Found 2-bit comparator equal for signal <loc_reg_in$cmp_eq0032> created at line 345.
+    Found 2-bit comparator equal for signal <loc_reg_in$cmp_eq0033> created at line 345.
+    Found 3-bit comparator greatequal for signal <loc_reg_in$cmp_ge0000> created at line 318.
+    Found 3-bit comparator greatequal for signal <loc_reg_in$cmp_ge0001> created at line 322.
+    Found 3-bit comparator greatequal for signal <loc_reg_in$cmp_ge0002> created at line 324.
+    Found 3-bit comparator greatequal for signal <loc_reg_in$cmp_ge0003> created at line 326.
+    Found 3-bit comparator greatequal for signal <loc_reg_in$cmp_ge0004> created at line 330.
+    Found 3-bit comparator greatequal for signal <loc_reg_in$cmp_ge0005> created at line 338.
+    Found 3-bit comparator greatequal for signal <loc_reg_in$cmp_ge0006> created at line 364.
+    Found 3-bit comparator greatequal for signal <loc_reg_in$cmp_ge0007> created at line 372.
+    Found 3-bit comparator lessequal for signal <loc_reg_in$cmp_le0000> created at line 317.
+    Found 3-bit comparator lessequal for signal <loc_reg_in$cmp_le0001> created at line 320.
+    Found 3-bit comparator lessequal for signal <loc_reg_in$cmp_le0002> created at line 322.
+    Found 3-bit comparator lessequal for signal <loc_reg_in$cmp_le0003> created at line 328.
+    Found 3-bit comparator lessequal for signal <loc_reg_in$cmp_le0004> created at line 330.
+    Found 3-bit comparator lessequal for signal <loc_reg_in$cmp_le0005> created at line 345.
+    Found 3-bit comparator lessequal for signal <loc_reg_in$cmp_le0006> created at line 364.
+    Found 3-bit comparator lessequal for signal <loc_reg_in$cmp_le0007> created at line 372.
+    Found 3-bit comparator less for signal <loc_reg_in$cmp_lt0000> created at line 316.
+    Found 3-bit comparator less for signal <loc_reg_in$cmp_lt0001> created at line 360.
+    Found 3-bit subtractor for signal <loc_reg_in$sub0002> created at line 239.
+    Found 3-bit subtractor for signal <loc_reg_in$sub0003> created at line 246.
+    Found 1-bit 5-to-1 multiplexer for signal <map_sig$mux0000<0>>.
+    Found 1-bit 5-to-1 multiplexer for signal <map_sig$mux0001<0>>.
+    Found 1-bit 5-to-1 multiplexer for signal <map_sig$mux0002<0>>.
+    Found 1-bit 5-to-1 multiplexer for signal <map_sig$mux0003<0>>.
+    Found 1-bit 5-to-1 multiplexer for signal <map_sig$mux0004<0>>.
+    Found 1-bit 5-to-1 multiplexer for signal <map_sig$mux0005<0>>.
+    Found 1-bit 5-to-1 multiplexer for signal <map_sig$mux0006<0>>.
+    Found 1-bit 5-to-1 multiplexer for signal <map_sig$mux0007<0>>.
+    Found 1-bit 5-to-1 multiplexer for signal <map_sig$mux0008<0>>.
+    Found 1-bit 5-to-1 multiplexer for signal <map_sig$mux0009<0>>.
+    Found 4-bit register for signal <map_sig<0><1:2>>.
+    Found 2-bit register for signal <map_sig<0><4>>.
+    Found 10-bit register for signal <map_sig<1>>.
+    Found 10-bit register for signal <map_sig<2>>.
+    Found 10-bit register for signal <map_sig<3>>.
+    Found 10-bit register for signal <map_sig<4>>.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0002_0$mux0000> created at line 317.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0002_0$mux0001> created at line 317.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0002_0$mux0002> created at line 317.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0002_0$mux0003> created at line 317.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0002_0$mux0004> created at line 317.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0002_1$mux0000> created at line 317.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0002_1$mux0001> created at line 317.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0002_1$mux0002> created at line 317.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0002_1$mux0003> created at line 317.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0002_1$mux0004> created at line 317.
+    Found 1-bit 3-to-1 multiplexer for signal <mux0003_0$mux0000> created at line 317.
+    Found 1-bit 3-to-1 multiplexer for signal <mux0003_0$mux0001> created at line 317.
+    Found 1-bit 3-to-1 multiplexer for signal <mux0003_0$mux0002> created at line 317.
+    Found 1-bit 3-to-1 multiplexer for signal <mux0003_0$mux0003> created at line 317.
+    Found 1-bit 3-to-1 multiplexer for signal <mux0003_0$mux0004> created at line 317.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0003_1$mux0000> created at line 317.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0003_1$mux0001> created at line 317.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0003_1$mux0002> created at line 317.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0003_1$mux0003> created at line 317.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0003_1$mux0004> created at line 317.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0016_0$mux0000> created at line 345.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0016_0$mux0001> created at line 345.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0016_0$mux0002> created at line 345.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0016_0$mux0003> created at line 345.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0016_0$mux0004> created at line 345.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0016_1$mux0000> created at line 345.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0016_1$mux0001> created at line 345.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0016_1$mux0002> created at line 345.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0016_1$mux0003> created at line 345.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0016_1$mux0004> created at line 345.
+    Found 1-bit 3-to-1 multiplexer for signal <mux0017_0$mux0000> created at line 345.
+    Found 1-bit 3-to-1 multiplexer for signal <mux0017_0$mux0001> created at line 345.
+    Found 1-bit 3-to-1 multiplexer for signal <mux0017_0$mux0002> created at line 345.
+    Found 1-bit 3-to-1 multiplexer for signal <mux0017_0$mux0003> created at line 345.
+    Found 1-bit 3-to-1 multiplexer for signal <mux0017_0$mux0004> created at line 345.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0017_1$mux0000> created at line 345.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0017_1$mux0001> created at line 345.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0017_1$mux0002> created at line 345.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0017_1$mux0003> created at line 345.
+    Found 1-bit 4-to-1 multiplexer for signal <mux0017_1$mux0004> created at line 345.
+    Found 4-bit register for signal <mv0>.
+    Found 4-bit subtractor for signal <mv0$addsub0000> created at line 414.
+    Found 4-bit register for signal <mv1>.
+    Found 4-bit subtractor for signal <mv1$addsub0000> created at line 410.
+    Found 1-bit register for signal <mv_tmp>.
+    Found 11-bit register for signal <next_state>.
+    Found 4-bit register for signal <pt0>.
+    Found 4-bit adder for signal <pt0$addsub0000> created at line 606.
+    Found 4-bit register for signal <pt1>.
+    Found 4-bit adder for signal <pt1$addsub0000> created at line 603.
+    Found 4-bit register for signal <pt2>.
+    Found 4-bit adder for signal <pt2$addsub0000> created at line 599.
+    Found 4-bit register for signal <pt3>.
+    Found 4-bit adder for signal <pt3$addsub0000> created at line 594.
+    Found 12-bit register for signal <sleep_cnt>.
+    Found 12-bit adder for signal <sleep_cnt$addsub0000> created at line 621.
+    Found 12-bit comparator less for signal <sleep_cnt$cmp_lt0000> created at line 620.
+    Found 2-bit register for signal <tile1>.
+    Found 2-bit register for signal <tile2>.
+    Found 1-bit 5-to-1 multiplexer for signal <varindex0001$mux0000> created at line 591.
+    Found 3-bit register for signal <x1>.
+    Found 3-bit adder for signal <x1$addsub0000> created at line 614.
+    Found 3-bit register for signal <x2>.
+    Found 3-bit comparator not equal for signal <x2$cmp_ne0000> created at line 259.
+    Found 3-bit comparator not equal for signal <x2$cmp_ne0001> created at line 254.
+    Found 3-bit comparator not equal for signal <x2$cmp_ne0002> created at line 276.
+    Found 3-bit comparator not equal for signal <x2$cmp_ne0003> created at line 271.
+    Found 3-bit comparator not equal for signal <x2$cmp_ne0004> created at line 268.
+    Found 3-bit comparator not equal for signal <x2$cmp_ne0005> created at line 252.
+    Found 3-bit register for signal <y1>.
+    Found 3-bit adder for signal <y1$addsub0000> created at line 616.
+    Found 3-bit register for signal <y2>.
+    Summary:
+	inferred 144 D-type flip-flop(s).
+	inferred  14 Adder/Subtractor(s).
+	inferred  90 Comparator(s).
+	inferred  89 Multiplexer(s).
+Unit <GabbunPANG> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Multipliers                                          : 4
+ 3x7-bit multiplier                                    : 4
+# Adders/Subtractors                                   : 22
+ 10-bit adder                                          : 8
+ 12-bit adder                                          : 1
+ 3-bit adder                                           : 5
+ 3-bit subtractor                                      : 2
+ 4-bit adder                                           : 4
+ 4-bit subtractor                                      : 2
+# Counters                                             : 6
+ 10-bit up counter                                     : 1
+ 11-bit up counter                                     : 1
+ 24-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 51-bit up counter                                     : 1
+# Registers                                            : 149
+ 1-bit register                                        : 102
+ 11-bit register                                       : 2
+ 12-bit register                                       : 2
+ 2-bit register                                        : 25
+ 3-bit register                                        : 5
+ 4-bit register                                        : 9
+ 5-bit register                                        : 2
+ 6-bit register                                        : 2
+# Comparators                                          : 120
+ 10-bit comparator greatequal                          : 8
+ 10-bit comparator lessequal                           : 8
+ 11-bit comparator greatequal                          : 7
+ 11-bit comparator lessequal                           : 7
+ 12-bit comparator less                                : 1
+ 2-bit comparator equal                                : 57
+ 3-bit comparator equal                                : 7
+ 3-bit comparator greatequal                           : 8
+ 3-bit comparator less                                 : 2
+ 3-bit comparator lessequal                            : 8
+ 3-bit comparator not equal                            : 6
+ 6-bit comparator equal                                : 1
+# Multiplexers                                         : 75
+ 1-bit 3-to-1 multiplexer                              : 10
+ 1-bit 4-to-1 multiplexer                              : 30
+ 1-bit 5-to-1 multiplexer                              : 27
+ 2-bit 3-to-1 multiplexer                              : 2
+ 2-bit 4-to-1 multiplexer                              : 2
+ 2-bit 5-to-1 multiplexer                              : 2
+ 5-bit 5-to-1 multiplexer                              : 2
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 0 in block <digit>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Multipliers                                          : 4
+ 3x7-bit multiplier                                    : 4
+# Adders/Subtractors                                   : 22
+ 10-bit adder                                          : 8
+ 12-bit adder                                          : 1
+ 3-bit adder                                           : 5
+ 3-bit subtractor                                      : 2
+ 4-bit adder                                           : 4
+ 4-bit subtractor                                      : 2
+# Counters                                             : 6
+ 10-bit up counter                                     : 1
+ 11-bit up counter                                     : 1
+ 24-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 51-bit up counter                                     : 1
+# Registers                                            : 271
+ Flip-Flops                                            : 271
+# Comparators                                          : 120
+ 10-bit comparator greatequal                          : 8
+ 10-bit comparator lessequal                           : 8
+ 11-bit comparator greatequal                          : 7
+ 11-bit comparator lessequal                           : 7
+ 12-bit comparator less                                : 1
+ 2-bit comparator equal                                : 57
+ 3-bit comparator equal                                : 7
+ 3-bit comparator greatequal                           : 8
+ 3-bit comparator less                                 : 2
+ 3-bit comparator lessequal                            : 8
+ 3-bit comparator not equal                            : 6
+ 6-bit comparator equal                                : 1
+# Multiplexers                                         : 75
+ 1-bit 3-to-1 multiplexer                              : 10
+ 1-bit 4-to-1 multiplexer                              : 30
+ 1-bit 5-to-1 multiplexer                              : 27
+ 2-bit 3-to-1 multiplexer                              : 2
+ 2-bit 4-to-1 multiplexer                              : 2
+ 2-bit 5-to-1 multiplexer                              : 2
+ 5-bit 5-to-1 multiplexer                              : 2
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <r_data_0> in Unit <TFT_LCD> is equivalent to the following 4 FFs/Latches, which will be removed : <r_data_1> <r_data_2> <r_data_3> <r_data_4> 
+INFO:Xst:2261 - The FF/Latch <g_data_0> in Unit <TFT_LCD> is equivalent to the following 5 FFs/Latches, which will be removed : <g_data_1> <g_data_2> <g_data_3> <g_data_4> <g_data_5> 
+INFO:Xst:2261 - The FF/Latch <b_data_0> in Unit <TFT_LCD> is equivalent to the following 4 FFs/Latches, which will be removed : <b_data_1> <b_data_2> <b_data_3> <b_data_4> 
+WARNING:Xst:1710 - FF/Latch <digit_3> (without init value) has a constant value of 0 in block <segment7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <next_state_10> of sequential type is unconnected in block <GabbunPANG>.
+WARNING:Xst:2677 - Node <cur_state_10> of sequential type is unconnected in block <GabbunPANG>.
+
+Optimizing unit <GabbunPANG> ...
+
+Optimizing unit <TFT_LCD> ...
+
+Optimizing unit <key_matrix> ...
+
+Optimizing unit <reg> ...
+
+Optimizing unit <segment7> ...
+WARNING:Xst:2677 - Node <pt3_0> of sequential type is unconnected in block <GabbunPANG>.
+WARNING:Xst:2677 - Node <pt3_1> of sequential type is unconnected in block <GabbunPANG>.
+WARNING:Xst:2677 - Node <pt3_2> of sequential type is unconnected in block <GabbunPANG>.
+WARNING:Xst:2677 - Node <pt3_3> of sequential type is unconnected in block <GabbunPANG>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block GabbunPANG, actual ratio is 5.
+FlipFlop map_sig<2>_0_0 has been replicated 1 time(s)
+FlipFlop map_sig<2>_1_0 has been replicated 1 time(s)
+FlipFlop map_sig<2>_2_0 has been replicated 1 time(s)
+FlipFlop x1_0 has been replicated 3 time(s)
+FlipFlop x1_1 has been replicated 2 time(s)
+FlipFlop x1_2 has been replicated 2 time(s)
+FlipFlop x2_0 has been replicated 2 time(s)
+FlipFlop x2_1 has been replicated 2 time(s)
+FlipFlop x2_2 has been replicated 1 time(s)
+FlipFlop y1_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 370
+ Flip-Flops                                            : 370
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : GabbunPANG.ngr
+Top Level Output File Name         : GabbunPANG
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 42
+
+Cell Usage :
+# BELS                             : 2433
+#      GND                         : 1
+#      INV                         : 22
+#      LUT1                        : 108
+#      LUT2                        : 247
+#      LUT2_D                      : 13
+#      LUT2_L                      : 8
+#      LUT3                        : 369
+#      LUT3_D                      : 29
+#      LUT3_L                      : 29
+#      LUT4                        : 918
+#      LUT4_D                      : 70
+#      LUT4_L                      : 120
+#      MUXCY                       : 187
+#      MUXF5                       : 190
+#      MUXF6                       : 11
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 108
+# FlipFlops/Latches                : 370
+#      FD                          : 2
+#      FDC                         : 69
+#      FDCE                        : 24
+#      FDCP                        : 51
+#      FDE                         : 207
+#      FDP                         : 10
+#      FDPE                        : 5
+#      FDS                         : 2
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 42
+#      IBUF                        : 5
+#      IBUFG                       : 1
+#      OBUF                        : 36
+# DCMs                             : 1
+#      DCM                         : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s2000fg456-4 
+
+ Number of Slices:                     1032  out of  20480     5%  
+ Number of Slice Flip Flops:            366  out of  40960     0%  
+ Number of 4 input LUTs:               1933  out of  40960     4%  
+ Number of IOs:                          42
+ Number of bonded IOBs:                  42  out of    333    12%  
+    IOB Flip Flops:                       4
+ Number of GCLKs:                         3  out of      8    37%  
+ Number of DCMs:                          1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)             | Load  |
+-----------------------------------+-----------------------------------+-------+
+DVD/d_clk1                         | BUFG                              | 184   |
+clk                                | Inst_clk_25m/DCM_INST:CLKFX       | 161   |
+keykey/DVD0/d_clk                  | NONE(keykey/scan_cnt_0)           | 13    |
+key_event(keykey/key_event_f5:O)   | NONE(*)(loc_reg/reg0[11].reg/data)| 12    |
+-----------------------------------+-----------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------+--------------------------------+-------+
+Control Signal                                                         | Buffer(FF name)                | Load  |
+-----------------------------------------------------------------------+--------------------------------+-------+
+rst_inv(rst_inv1_INV_0:O)                                              | NONE(DVD/cnt_data_0)           | 108   |
+random_module/rand_sig_0_and0000(random_module/rand_sig_0_and00001:O)  | NONE(random_module/rand_sig_0) | 1     |
+random_module/rand_sig_0_and0001(random_module/rand_sig_0_and00011:O)  | NONE(random_module/rand_sig_0) | 1     |
+random_module/rand_sig_10_and0000(random_module/rand_sig_10_and00001:O)| NONE(random_module/rand_sig_10)| 1     |
+random_module/rand_sig_10_and0001(random_module/rand_sig_10_and00011:O)| NONE(random_module/rand_sig_10)| 1     |
+random_module/rand_sig_11_and0000(random_module/rand_sig_11_and00001:O)| NONE(random_module/rand_sig_11)| 1     |
+random_module/rand_sig_11_and0001(random_module/rand_sig_11_and00011:O)| NONE(random_module/rand_sig_11)| 1     |
+random_module/rand_sig_12_and0000(random_module/rand_sig_12_and00001:O)| NONE(random_module/rand_sig_12)| 1     |
+random_module/rand_sig_12_and0001(random_module/rand_sig_12_and00011:O)| NONE(random_module/rand_sig_12)| 1     |
+random_module/rand_sig_13_and0000(random_module/rand_sig_13_and00001:O)| NONE(random_module/rand_sig_13)| 1     |
+random_module/rand_sig_13_and0001(random_module/rand_sig_13_and00011:O)| NONE(random_module/rand_sig_13)| 1     |
+random_module/rand_sig_14_and0000(random_module/rand_sig_14_and00001:O)| NONE(random_module/rand_sig_14)| 1     |
+random_module/rand_sig_14_and0001(random_module/rand_sig_14_and00011:O)| NONE(random_module/rand_sig_14)| 1     |
+random_module/rand_sig_15_and0000(random_module/rand_sig_15_and00001:O)| NONE(random_module/rand_sig_15)| 1     |
+random_module/rand_sig_15_and0001(random_module/rand_sig_15_and00011:O)| NONE(random_module/rand_sig_15)| 1     |
+random_module/rand_sig_16_and0000(random_module/rand_sig_16_and00001:O)| NONE(random_module/rand_sig_16)| 1     |
+random_module/rand_sig_16_and0001(random_module/rand_sig_16_and00011:O)| NONE(random_module/rand_sig_16)| 1     |
+random_module/rand_sig_17_and0000(random_module/rand_sig_17_and00001:O)| NONE(random_module/rand_sig_17)| 1     |
+random_module/rand_sig_17_and0001(random_module/rand_sig_17_and00011:O)| NONE(random_module/rand_sig_17)| 1     |
+random_module/rand_sig_18_and0000(random_module/rand_sig_18_and00001:O)| NONE(random_module/rand_sig_18)| 1     |
+random_module/rand_sig_18_and0001(random_module/rand_sig_18_and00011:O)| NONE(random_module/rand_sig_18)| 1     |
+random_module/rand_sig_19_and0000(random_module/rand_sig_19_and00001:O)| NONE(random_module/rand_sig_19)| 1     |
+random_module/rand_sig_19_and0001(random_module/rand_sig_19_and00011:O)| NONE(random_module/rand_sig_19)| 1     |
+random_module/rand_sig_1_and0000(random_module/rand_sig_1_and00001:O)  | NONE(random_module/rand_sig_1) | 1     |
+random_module/rand_sig_1_and0001(random_module/rand_sig_1_and00011:O)  | NONE(random_module/rand_sig_1) | 1     |
+random_module/rand_sig_20_and0000(random_module/rand_sig_20_and00001:O)| NONE(random_module/rand_sig_20)| 1     |
+random_module/rand_sig_20_and0001(random_module/rand_sig_20_and00011:O)| NONE(random_module/rand_sig_20)| 1     |
+random_module/rand_sig_21_and0000(random_module/rand_sig_21_and00001:O)| NONE(random_module/rand_sig_21)| 1     |
+random_module/rand_sig_21_and0001(random_module/rand_sig_21_and00011:O)| NONE(random_module/rand_sig_21)| 1     |
+random_module/rand_sig_22_and0000(random_module/rand_sig_22_and00001:O)| NONE(random_module/rand_sig_22)| 1     |
+random_module/rand_sig_22_and0001(random_module/rand_sig_22_and00011:O)| NONE(random_module/rand_sig_22)| 1     |
+random_module/rand_sig_23_and0000(random_module/rand_sig_23_and00001:O)| NONE(random_module/rand_sig_23)| 1     |
+random_module/rand_sig_23_and0001(random_module/rand_sig_23_and00011:O)| NONE(random_module/rand_sig_23)| 1     |
+random_module/rand_sig_24_and0000(random_module/rand_sig_24_and00001:O)| NONE(random_module/rand_sig_24)| 1     |
+random_module/rand_sig_24_and0001(random_module/rand_sig_24_and00011:O)| NONE(random_module/rand_sig_24)| 1     |
+random_module/rand_sig_25_and0000(random_module/rand_sig_25_and00001:O)| NONE(random_module/rand_sig_25)| 1     |
+random_module/rand_sig_25_and0001(random_module/rand_sig_25_and00011:O)| NONE(random_module/rand_sig_25)| 1     |
+random_module/rand_sig_26_and0000(random_module/rand_sig_26_and00001:O)| NONE(random_module/rand_sig_26)| 1     |
+random_module/rand_sig_26_and0001(random_module/rand_sig_26_and00011:O)| NONE(random_module/rand_sig_26)| 1     |
+random_module/rand_sig_27_and0000(random_module/rand_sig_27_and00001:O)| NONE(random_module/rand_sig_27)| 1     |
+random_module/rand_sig_27_and0001(random_module/rand_sig_27_and00011:O)| NONE(random_module/rand_sig_27)| 1     |
+random_module/rand_sig_28_and0000(random_module/rand_sig_28_and00001:O)| NONE(random_module/rand_sig_28)| 1     |
+random_module/rand_sig_28_and0001(random_module/rand_sig_28_and00011:O)| NONE(random_module/rand_sig_28)| 1     |
+random_module/rand_sig_29_and0000(random_module/rand_sig_29_and00001:O)| NONE(random_module/rand_sig_29)| 1     |
+random_module/rand_sig_29_and0001(random_module/rand_sig_29_and00011:O)| NONE(random_module/rand_sig_29)| 1     |
+random_module/rand_sig_2_and0000(random_module/rand_sig_2_and00001:O)  | NONE(random_module/rand_sig_2) | 1     |
+random_module/rand_sig_2_and0001(random_module/rand_sig_2_and00011:O)  | NONE(random_module/rand_sig_2) | 1     |
+random_module/rand_sig_30_and0000(random_module/rand_sig_30_and00001:O)| NONE(random_module/rand_sig_30)| 1     |
+random_module/rand_sig_30_and0001(random_module/rand_sig_30_and00011:O)| NONE(random_module/rand_sig_30)| 1     |
+random_module/rand_sig_31_and0000(random_module/rand_sig_31_and00001:O)| NONE(random_module/rand_sig_31)| 1     |
+random_module/rand_sig_31_and0001(random_module/rand_sig_31_and00011:O)| NONE(random_module/rand_sig_31)| 1     |
+random_module/rand_sig_32_and0000(random_module/rand_sig_32_and00001:O)| NONE(random_module/rand_sig_32)| 1     |
+random_module/rand_sig_32_and0001(random_module/rand_sig_32_and00011:O)| NONE(random_module/rand_sig_32)| 1     |
+random_module/rand_sig_33_and0000(random_module/rand_sig_33_and00001:O)| NONE(random_module/rand_sig_33)| 1     |
+random_module/rand_sig_33_and0001(random_module/rand_sig_33_and00011:O)| NONE(random_module/rand_sig_33)| 1     |
+random_module/rand_sig_34_and0000(random_module/rand_sig_34_and00001:O)| NONE(random_module/rand_sig_34)| 1     |
+random_module/rand_sig_34_and0001(random_module/rand_sig_34_and00011:O)| NONE(random_module/rand_sig_34)| 1     |
+random_module/rand_sig_35_and0000(random_module/rand_sig_35_and00001:O)| NONE(random_module/rand_sig_35)| 1     |
+random_module/rand_sig_35_and0001(random_module/rand_sig_35_and00011:O)| NONE(random_module/rand_sig_35)| 1     |
+random_module/rand_sig_36_and0000(random_module/rand_sig_36_and00001:O)| NONE(random_module/rand_sig_36)| 1     |
+random_module/rand_sig_36_and0001(random_module/rand_sig_36_and00011:O)| NONE(random_module/rand_sig_36)| 1     |
+random_module/rand_sig_37_and0000(random_module/rand_sig_37_and00001:O)| NONE(random_module/rand_sig_37)| 1     |
+random_module/rand_sig_37_and0001(random_module/rand_sig_37_and00011:O)| NONE(random_module/rand_sig_37)| 1     |
+random_module/rand_sig_38_and0000(random_module/rand_sig_38_and00001:O)| NONE(random_module/rand_sig_38)| 1     |
+random_module/rand_sig_38_and0001(random_module/rand_sig_38_and00011:O)| NONE(random_module/rand_sig_38)| 1     |
+random_module/rand_sig_39_and0000(random_module/rand_sig_39_and00001:O)| NONE(random_module/rand_sig_39)| 1     |
+random_module/rand_sig_39_and0001(random_module/rand_sig_39_and00011:O)| NONE(random_module/rand_sig_39)| 1     |
+random_module/rand_sig_3_and0000(random_module/rand_sig_3_and00001:O)  | NONE(random_module/rand_sig_3) | 1     |
+random_module/rand_sig_3_and0001(random_module/rand_sig_3_and00011:O)  | NONE(random_module/rand_sig_3) | 1     |
+random_module/rand_sig_40_and0000(random_module/rand_sig_40_and00001:O)| NONE(random_module/rand_sig_40)| 1     |
+random_module/rand_sig_40_and0001(random_module/rand_sig_40_and00011:O)| NONE(random_module/rand_sig_40)| 1     |
+random_module/rand_sig_41_and0000(random_module/rand_sig_41_and00001:O)| NONE(random_module/rand_sig_41)| 1     |
+random_module/rand_sig_41_and0001(random_module/rand_sig_41_and00011:O)| NONE(random_module/rand_sig_41)| 1     |
+random_module/rand_sig_42_and0000(random_module/rand_sig_42_and00001:O)| NONE(random_module/rand_sig_42)| 1     |
+random_module/rand_sig_42_and0001(random_module/rand_sig_42_and00011:O)| NONE(random_module/rand_sig_42)| 1     |
+random_module/rand_sig_43_and0000(random_module/rand_sig_43_and00001:O)| NONE(random_module/rand_sig_43)| 1     |
+random_module/rand_sig_43_and0001(random_module/rand_sig_43_and00011:O)| NONE(random_module/rand_sig_43)| 1     |
+random_module/rand_sig_44_and0000(random_module/rand_sig_44_and00001:O)| NONE(random_module/rand_sig_44)| 1     |
+random_module/rand_sig_44_and0001(random_module/rand_sig_44_and00011:O)| NONE(random_module/rand_sig_44)| 1     |
+random_module/rand_sig_45_and0000(random_module/rand_sig_45_and00001:O)| NONE(random_module/rand_sig_45)| 1     |
+random_module/rand_sig_45_and0001(random_module/rand_sig_45_and00011:O)| NONE(random_module/rand_sig_45)| 1     |
+random_module/rand_sig_46_and0000(random_module/rand_sig_46_and00001:O)| NONE(random_module/rand_sig_46)| 1     |
+random_module/rand_sig_46_and0001(random_module/rand_sig_46_and00011:O)| NONE(random_module/rand_sig_46)| 1     |
+random_module/rand_sig_47_and0000(random_module/rand_sig_47_and00001:O)| NONE(random_module/rand_sig_47)| 1     |
+random_module/rand_sig_47_and0001(random_module/rand_sig_47_and00011:O)| NONE(random_module/rand_sig_47)| 1     |
+random_module/rand_sig_48_and0000(random_module/rand_sig_48_and00001:O)| NONE(random_module/rand_sig_48)| 1     |
+random_module/rand_sig_48_and0001(random_module/rand_sig_48_and00011:O)| NONE(random_module/rand_sig_48)| 1     |
+random_module/rand_sig_49_and0000(random_module/rand_sig_49_and00001:O)| NONE(random_module/rand_sig_49)| 1     |
+random_module/rand_sig_49_and0001(random_module/rand_sig_49_and00011:O)| NONE(random_module/rand_sig_49)| 1     |
+random_module/rand_sig_4_and0000(random_module/rand_sig_4_and00001:O)  | NONE(random_module/rand_sig_4) | 1     |
+random_module/rand_sig_4_and0001(random_module/rand_sig_4_and00011:O)  | NONE(random_module/rand_sig_4) | 1     |
+random_module/rand_sig_50_and0000(random_module/rand_sig_50_and00001:O)| NONE(random_module/rand_sig_50)| 1     |
+random_module/rand_sig_50_and0001(random_module/rand_sig_50_and00011:O)| NONE(random_module/rand_sig_50)| 1     |
+random_module/rand_sig_5_and0000(random_module/rand_sig_5_and00001:O)  | NONE(random_module/rand_sig_5) | 1     |
+random_module/rand_sig_5_and0001(random_module/rand_sig_5_and00011:O)  | NONE(random_module/rand_sig_5) | 1     |
+random_module/rand_sig_6_and0000(random_module/rand_sig_6_and00001:O)  | NONE(random_module/rand_sig_6) | 1     |
+random_module/rand_sig_6_and0001(random_module/rand_sig_6_and00011:O)  | NONE(random_module/rand_sig_6) | 1     |
+random_module/rand_sig_7_and0000(random_module/rand_sig_7_and00001:O)  | NONE(random_module/rand_sig_7) | 1     |
+random_module/rand_sig_7_and0001(random_module/rand_sig_7_and00011:O)  | NONE(random_module/rand_sig_7) | 1     |
+random_module/rand_sig_8_and0000(random_module/rand_sig_8_and00001:O)  | NONE(random_module/rand_sig_8) | 1     |
+random_module/rand_sig_8_and0001(random_module/rand_sig_8_and00011:O)  | NONE(random_module/rand_sig_8) | 1     |
+random_module/rand_sig_9_and0000(random_module/rand_sig_9_and00001:O)  | NONE(random_module/rand_sig_9) | 1     |
+random_module/rand_sig_9_and0001(random_module/rand_sig_9_and00011:O)  | NONE(random_module/rand_sig_9) | 1     |
+-----------------------------------------------------------------------+--------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 17.055ns (Maximum Frequency: 58.634MHz)
+   Minimum input arrival time before clock: 6.828ns
+   Maximum output required time after clock: 14.575ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DVD/d_clk1'
+  Clock period: 17.055ns (frequency: 58.634MHz)
+  Total number of paths / destination ports: 312816 / 199
+-------------------------------------------------------------------------
+Delay:               17.055ns (Levels of Logic = 13)
+  Source:            map_sig<1>_2_0 (FF)
+  Destination:       loc_reg_in_8 (FF)
+  Source Clock:      DVD/d_clk1 rising
+  Destination Clock: DVD/d_clk1 rising
+
+  Data Path: map_sig<1>_2_0 to loc_reg_in_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             18   0.720   1.485  map_sig<1>_2_0 (map_sig<1>_2_0)
+     LUT3:I2->O            1   0.551   0.000  Mmux_map_sig_mux0007<0>_7 (Mmux_map_sig_mux0007<0>_7)
+     MUXF5:I0->O           3   0.360   0.975  Mmux_map_sig_mux0007<0>_5_f5 (Mmux_map_sig_mux0007<0>_5_f5)
+     LUT3:I2->O            3   0.551   1.102  x2<2>21 (Mmux_map_sig_index0007)
+     LUT3:I1->O            1   0.551   0.000  Mmux__mux0001_5 (Mmux__mux0001_5)
+     MUXF5:I0->O           1   0.360   0.000  Mmux__mux0001_3_f5 (Mmux__mux0001_3_f5)
+     MUXF6:I1->O          15   0.342   1.214  Mmux__mux0001_2_f6 (_mux0001<0>)
+     LUT4:I3->O            1   0.551   0.000  loc_reg_in_and001552_SW0_SW0_F (N1035)
+     MUXF5:I0->O           1   0.360   0.869  loc_reg_in_and001552_SW0_SW0 (N914)
+     LUT4:I2->O            6   0.551   1.071  loc_reg_in_and001552 (loc_reg_in_and0015)
+     LUT4:I2->O            1   0.551   0.996  loc_reg_in_mux0001<10>41111 (loc_reg_in_mux0001<10>41111)
+     LUT4:I1->O           11   0.551   1.212  loc_reg_in_mux0001<10>41158 (loc_reg_in_mux0001<10>41158)
+     LUT4:I2->O            1   0.551   0.827  loc_reg_in_mux0001<3>61 (loc_reg_in_mux0001<3>61)
+     LUT4:I3->O            1   0.551   0.000  loc_reg_in_mux0001<3>100 (loc_reg_in_mux0001<3>)
+     FDE:D                     0.203          loc_reg_in_8
+    ----------------------------------------
+    Total                     17.055ns (7.304ns logic, 9.751ns route)
+                                       (42.8% logic, 57.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.070ns (frequency: 245.715MHz)
+  Total number of paths / destination ports: 6118 / 169
+-------------------------------------------------------------------------
+Delay:               16.279ns (Levels of Logic = 9)
+  Source:            tft/hsync_cnt_1 (FF)
+  Destination:       tft/b_data_0 (FF)
+  Source Clock:      clk rising 0.3X
+  Destination Clock: clk rising 0.3X
+
+  Data Path: tft/hsync_cnt_1 to tft/b_data_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.720   1.457  tft/hsync_cnt_1 (tft/hsync_cnt_1)
+     LUT2:I0->O            6   0.551   1.342  tft/g_data_or0000113 (tft/N2)
+     LUT4:I0->O            2   0.551   1.216  tft/x_cmp_ge0000211 (tft/N43)
+     LUT4:I0->O            1   0.551   1.140  tft/x_mux0004<4>29 (tft/x_mux0004<4>29)
+     LUT4:I0->O           10   0.551   1.160  tft/x_mux0004<4>44 (tft/x_mux0004<4>)
+     LUT4:I3->O            1   0.551   0.827  tft/mux0000_1_mux0000181 (tft/mux0000_1_mux0000181)
+     LUT4:I3->O            1   0.551   1.140  tft/mux0000_1_mux0000182 (tft/mux0000_1_mux0000182)
+     LUT4:I0->O            1   0.551   0.869  tft/mux0000_1_mux0000206 (tft/mux0000_1_mux0000206)
+     LUT3:I2->O            3   0.551   1.246  tft/mux0000_1_mux0000216 (tft/mux0000_1_mux0000)
+     LUT4:I0->O            1   0.551   0.000  tft/b_data_mux0004<0>1 (tft/b_data_mux0004<0>)
+     FDC:D                     0.203          tft/b_data_0
+    ----------------------------------------
+    Total                     16.279ns (5.882ns logic, 10.397ns route)
+                                       (36.1% logic, 63.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'keykey/DVD0/d_clk'
+  Clock period: 6.622ns (frequency: 151.012MHz)
+  Total number of paths / destination ports: 81 / 15
+-------------------------------------------------------------------------
+Delay:               6.622ns (Levels of Logic = 3)
+  Source:            keykey/key_data_int_2 (FF)
+  Destination:       keykey/key_data_int_2 (FF)
+  Source Clock:      keykey/DVD0/d_clk rising
+  Destination Clock: keykey/DVD0/d_clk rising
+
+  Data Path: keykey/key_data_int_2 to keykey/key_data_int_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             10   0.720   1.473  keykey/key_data_int_2 (keykey/key_data_int_2)
+     LUT3:I0->O            1   0.551   1.140  keykey/key_data_int_mux0000<1>3 (keykey/key_data_int_mux0000<1>3)
+     LUT3:I0->O            1   0.551   0.000  keykey/key_data_int_mux0000<1>23_G (N1416)
+     MUXF5:I1->O           1   0.360   0.801  keykey/key_data_int_mux0000<1>23 (keykey/key_data_int_mux0000<1>23)
+     FDS:S                     1.026          keykey/key_data_int_2
+    ----------------------------------------
+    Total                      6.622ns (3.208ns logic, 3.414ns route)
+                                       (48.4% logic, 51.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DVD/d_clk1'
+  Total number of paths / destination ports: 156 / 156
+-------------------------------------------------------------------------
+Offset:              6.828ns (Levels of Logic = 2)
+  Source:            rstb (PAD)
+  Destination:       x2_0 (FF)
+  Destination Clock: DVD/d_clk1 rising
+
+  Data Path: rstb to x2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           297   0.821   3.710  rstb_IBUF (rst_inv_inv)
+     LUT2:I0->O           11   0.551   1.144  x2_and00001 (x2_and0000)
+     FDE:CE                    0.602          x2_0
+    ----------------------------------------
+    Total                      6.828ns (1.974ns logic, 4.854ns route)
+                                       (28.9% logic, 71.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 55 / 55
+-------------------------------------------------------------------------
+Offset:              4.794ns (Levels of Logic = 1)
+  Source:            rstb (PAD)
+  Destination:       random_module/count_0 (FF)
+  Destination Clock: clk rising 0.3X
+
+  Data Path: rstb to random_module/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           297   0.821   3.371  rstb_IBUF (rst_inv_inv)
+     FDE:CE                    0.602          random_module/count_0
+    ----------------------------------------
+    Total                      4.794ns (1.423ns logic, 3.371ns route)
+                                       (29.7% logic, 70.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 17 / 17
+-------------------------------------------------------------------------
+Offset:              7.367ns (Levels of Logic = 1)
+  Source:            tft/g_data_0 (FF)
+  Destination:       lcd<10> (PAD)
+  Source Clock:      clk rising 0.3X
+
+  Data Path: tft/g_data_0 to lcd<10>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.720   1.003  tft/g_data_0 (tft/g_data_0)
+     OBUF:I->O                 5.644          lcd_10_OBUF (lcd<10>)
+    ----------------------------------------
+    Total                      7.367ns (6.364ns logic, 1.003ns route)
+                                       (86.4% logic, 13.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DVD/d_clk1'
+  Total number of paths / destination ports: 565 / 12
+-------------------------------------------------------------------------
+Offset:              14.575ns (Levels of Logic = 5)
+  Source:            SEG/digit_1 (FF)
+  Destination:       segment<7> (PAD)
+  Source Clock:      DVD/d_clk1 rising
+
+  Data Path: SEG/digit_1 to segment<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.720   1.405  SEG/digit_1 (SEG/digit_1)
+     LUT3:I0->O            4   0.551   1.256  SEG/display_data<0>111 (SEG/N18)
+     LUT4:I0->O            1   0.551   1.140  SEG/display_data<3>67_SW0 (N1099)
+     LUT3:I0->O            7   0.551   1.405  SEG/display_data<3>67 (SEG/display_data<3>)
+     LUT4:I0->O            1   0.551   0.801  SEG/Mrom_seg_int51 (segment_5_OBUF)
+     OBUF:I->O                 5.644          segment_5_OBUF (segment<5>)
+    ----------------------------------------
+    Total                     14.575ns (8.568ns logic, 6.007ns route)
+                                       (58.8% logic, 41.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'keykey/DVD0/d_clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              7.551ns (Levels of Logic = 1)
+  Source:            keykey/scan_cnt_0 (FF)
+  Destination:       key_scan<0> (PAD)
+  Source Clock:      keykey/DVD0/d_clk rising
+
+  Data Path: keykey/scan_cnt_0 to key_scan<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.720   1.187  keykey/scan_cnt_0 (keykey/scan_cnt_0)
+     OBUF:I->O                 5.644          key_scan_0_OBUF (key_scan<0>)
+    ----------------------------------------
+    Total                      7.551ns (6.364ns logic, 1.187ns route)
+                                       (84.3% logic, 15.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 27.00 secs
+Total CPU time to Xst completion: 27.30 secs
+ 
+--> 
+
+Total memory usage is 333120 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
+

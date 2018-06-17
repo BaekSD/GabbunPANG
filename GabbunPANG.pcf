@@ -1,0 +1,51 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Jun 08 20:08:24 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "de" LOCATE = SITE "U16" LEVEL 1;
+COMP "clk" LOCATE = SITE "AB12" LEVEL 1;
+COMP "segment<0>" LOCATE = SITE "B9" LEVEL 1;
+COMP "segment<1>" LOCATE = SITE "E9" LEVEL 1;
+COMP "segment<2>" LOCATE = SITE "F9" LEVEL 1;
+COMP "segment<3>" LOCATE = SITE "A8" LEVEL 1;
+COMP "segment<4>" LOCATE = SITE "B8" LEVEL 1;
+COMP "segment<5>" LOCATE = SITE "D8" LEVEL 1;
+COMP "segment<6>" LOCATE = SITE "E8" LEVEL 1;
+COMP "segment<7>" LOCATE = SITE "A7" LEVEL 1;
+COMP "rstb" LOCATE = SITE "U14" LEVEL 1;
+PIN rstb_pin<0> = BEL "rstb" PINNAME PAD;
+PIN "rstb_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "lcd<10>" LOCATE = SITE "AA18" LEVEL 1;
+COMP "lcd<11>" LOCATE = SITE "AB18" LEVEL 1;
+COMP "lcd<12>" LOCATE = SITE "V17" LEVEL 1;
+COMP "lcd<13>" LOCATE = SITE "W17" LEVEL 1;
+COMP "lcd<14>" LOCATE = SITE "Y17" LEVEL 1;
+COMP "lcd<15>" LOCATE = SITE "AA17" LEVEL 1;
+COMP "lcd_clk" LOCATE = SITE "V16" LEVEL 1;
+COMP "key_in<0>" LOCATE = SITE "V19" LEVEL 1;
+COMP "key_in<1>" LOCATE = SITE "W21" LEVEL 1;
+COMP "key_in<2>" LOCATE = SITE "U19" LEVEL 1;
+COMP "key_in<3>" LOCATE = SITE "V22" LEVEL 1;
+COMP "dig<0>" LOCATE = SITE "B7" LEVEL 1;
+COMP "dig<1>" LOCATE = SITE "D7" LEVEL 1;
+COMP "dig<2>" LOCATE = SITE "E7" LEVEL 1;
+COMP "dig<3>" LOCATE = SITE "B6" LEVEL 1;
+COMP "dig<4>" LOCATE = SITE "C6" LEVEL 1;
+COMP "dig<5>" LOCATE = SITE "D6" LEVEL 1;
+COMP "lcd<0>" LOCATE = SITE "W14" LEVEL 1;
+COMP "lcd<1>" LOCATE = SITE "AB13" LEVEL 1;
+COMP "lcd<2>" LOCATE = SITE "V18" LEVEL 1;
+COMP "lcd<3>" LOCATE = SITE "Y16" LEVEL 1;
+COMP "lcd<4>" LOCATE = SITE "AA20" LEVEL 1;
+COMP "lcd<5>" LOCATE = SITE "AB20" LEVEL 1;
+COMP "lcd<6>" LOCATE = SITE "AA19" LEVEL 1;
+COMP "lcd<7>" LOCATE = SITE "AB19" LEVEL 1;
+COMP "lcd<8>" LOCATE = SITE "W18" LEVEL 1;
+COMP "lcd<9>" LOCATE = SITE "Y18" LEVEL 1;
+COMP "key_scan<0>" LOCATE = SITE "Y22" LEVEL 1;
+COMP "key_scan<1>" LOCATE = SITE "W19" LEVEL 1;
+COMP "key_scan<2>" LOCATE = SITE "W20" LEVEL 1;
+COMP "key_scan<3>" LOCATE = SITE "V20" LEVEL 1;
+SCHEMATIC END;
+
